@@ -22,13 +22,14 @@
         }
 
         #container>.box {
-            padding:30px 20px;   
+            padding: 30px 20px;
             height: 100%;
             flex: 1;
+            overflow-y: auto;
         }
 
         #container>.box:nth-child(1) {
-            background-color: #ffffff;
+            background-color: #f4d578;
         }
 
         #container>.box:nth-child(2) {
@@ -36,11 +37,16 @@
         }
 
         #container>.box:nth-child(3) {
-            background-color: #bbb;
+            background-color: #7693f8;
         }
 
         #container>.box:nth-child(4) {
-            background-color: rgb(236, 83, 83);
+            background-color: rgb(244, 119, 119);
+        }
+
+        .title {
+            font-size: 18px;
+            color: #fff
         }
     </style>
 </head>
@@ -48,13 +54,10 @@
 <body>
     <div id="container">
         <div class="box">
-            <div class="title">PDF 书籍</div>
-        </div>
-        <div class="box">
-            首页
-            <a href="/DDC/index.html">DDC</a>
-            <a href="/DDC/index.html">静态网站1</a>
-            <a href="/DDC/index.html">静态网站1</a>
+            <div class="title"> React 相关 </div>
+            <ul>
+                <li><a href="/web/MothersDay/index.html">MothersDay</a></li>
+            </ul>
         </div>
         <div class="box">
             <div class="title"> React 相关 </div>
@@ -62,6 +65,9 @@
         <div class="box">
             <div class="title">Vue 相关</div>
 
+        </div>
+        <div class="box">
+            <div class="title">加小盐</div>
         </div>
     </div>
 </body>
