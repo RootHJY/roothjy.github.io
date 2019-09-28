@@ -4,14 +4,65 @@
 <head>
     <meta charset="utf-8">
     <title>index</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        #container {
+            display: flex;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        #container>.box {
+            padding:30px 20px;   
+            height: 100%;
+            flex: 1;
+        }
+
+        #container>.box:nth-child(1) {
+            background-color: #ffffff;
+        }
+
+        #container>.box:nth-child(2) {
+            background-color: rgb(82, 241, 104);
+        }
+
+        #container>.box:nth-child(3) {
+            background-color: #bbb;
+        }
+
+        #container>.box:nth-child(4) {
+            background-color: rgb(236, 83, 83);
+        }
+    </style>
 </head>
 
 <body>
-    <div>
-        首页
-        <a href="/websocket/index.html">websocket</a>
-        <a href="/websocket/index.html">静态网站1</a>
-        <a href="/websocket/index.html">静态网站1</a>
+    <div id="container">
+        <div class="box">
+            <div class="title">PDF 书籍</div>
+        </div>
+        <div class="box">
+            首页
+            <a href="/DDC/index.html">DDC</a>
+            <a href="/DDC/index.html">静态网站1</a>
+            <a href="/DDC/index.html">静态网站1</a>
+        </div>
+        <div class="box">
+            <div class="title"> React 相关 </div>
+        </div>
+        <div class="box">
+            <div class="title">Vue 相关</div>
+
+        </div>
     </div>
 </body>
 
