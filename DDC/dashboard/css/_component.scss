@@ -1,0 +1,119 @@
+@charset "utf-8";
+$BodySize:14px; 
+$color:#333;
+$hrColor:#000;
+$bgColor:#ddd;
+$borderColor:#eee;
+
+$cw:1200px;
+$lw:270px;
+$rw:893px;
+
+%inner{
+	-moz-box-sizing:border-box; 
+	-webkit-box-sizing:border-box; 
+	-o-box-sizing:border-box; 
+	-ms-box-sizing:border-box; 
+	box-sizing:border-box;
+}
+
+%out{
+	-moz-box-sizing:content-box; 
+	-webkit-box-sizing:content-box; 
+	-o-box-sizing:content-box;
+	-ms-box-sizing:content-box; 
+	box-sizing:content-box;
+}
+
+%imgMid{ text-align:center; overflow:hidden; @extend %inner; font-size:0; white-space: nowrap;
+	img { max-width:100%; max-height:100%; }
+	img , &:after{  vertical-align:middle; display:inline-block; }
+	&:after { content:''; height:100%; width:0px; overflow:hidden; }
+}
+
+%fontNl{font-family:'PingFangSC-Light','Microsoft YaHei','heiti TC', Arial, Helvetica, SimSun, Sans-serif; }
+
+%fontYH{font-family: 'Microsoft YaHei','heiti TC', Arial, Helvetica, SimSun, Sans-serif; }
+
+%textmore {text-overflow:ellipsis; overflow:hidden; display:block;white-space:nowrap;}
+%textnomore{text-overflow:initial; white-space:normal;}
+
+%clearfix{	*zoom:1;
+	&:before , &:after{content: ""; display: table; }
+	&:after{ clear: both; }
+}
+
+%justify { text-align:justify; text-justify:inter-ideograph; letter-spacing:0px; font-size:0px; @extend %inner;
+	&:after { content:''; height:0px; width:100%; display:inline-block; overflow:hidden; }
+	.line { display:inline-block; height:0px; overflow:hidden; }
+	>* { text-align:left; font-size:$BodySize; }
+	.box{ display:inline-block; vertical-align:middle; }
+	&.box{ text-align:justify; }
+}
+
+%trfast{
+	transition:all 0.6s ease 0s; 
+	-moz-transition:all 0.6s ease 0s;
+    -webkit-transition:all 0.6s ease 0s; 
+    -o-transition:all 0.6s ease 0s; 
+    -ms-transition:all 0.6s ease 0s;
+}
+
+%trslow{
+	transition:all 0.3s ease 0s; 
+	-moz-transition:all 0.3s ease 0s;
+    -webkit-transition:all 0.3s ease 0s; 
+    -o-transition:all 0.3s ease 0s;
+    -ms-transition:all 0.3s ease 0s;
+ }
+
+%tu{ text-transform:uppercase;}
+%tc{ text-transform:capitalize;}
+
+@mixin ismiddle($v:middle){ display:inline-block; vertical-align:$v;}
+
+@mixin Lgradient($v,$values...) {
+    background:-webkit-linear-gradient($v,$values);
+    background:-moz-linear-gradient($v,$values);
+    background:-o-linear-gradient($v,$values);
+    background:-ms-linear-gradient($v,$values);
+    background:linear-gradient($v,$values);
+}
+
+@mixin Rgradient($v1:center center,$v2:circle contain,$values...){
+	background:-moz-radial-gradient($v1,$v2,$values);
+	background:-webkit-radial-gradient($v1,$v2,$values);
+	background:-o-radial-gradient($v1,$v2,$values);
+	background:-ms-radial-gradient($v1,$v2,$values);
+	background:radial-gradient($v1,$v2,$values);
+}
+
+@mixin istransform($v){
+	transform:$v; -ms-transform:$v; -moz-transform:$v; -webkit-transform:$v; -o-transform:$v;
+}
+
+@mixin tocenter($w,$h){ position:absolute; width:$w; height:$h; left:0; right:0; top:0; bottom:0;}
+
+@mixin isopacity($val){ filter: alpha(opacity=$val*100); opacity:$val; }
+
+
+@mixin screen($screen) {
+    @media screen and(max-width:#{$screen}) { @content; }
+}
+@mixin screenMin($screen){
+	@media screen and(min-width:#{$screen}) { @content; }
+}
+@mixin screenMaxMin($screen1,$screen2) {
+    @media screen and(max-width:#{$screen1}) and(min-width:#{$screen2}) { @content; }
+}
+
+
+@function black($opacity){
+  @return rgba(0,0,0,$opacity)
+}
+
+@function white($opacity){
+  @return rgba(255,255,255,$opacity)
+}
+
+@function cal($v1,$v2){ @return percentage($v1 / $v2);}

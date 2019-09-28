@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="keywords" content=""/>
+		<meta name="description" content=""/>
+		<title>DayDayCook日日煮</title>
+		<link rel="stylesheet" type="text/css" href="./css/main.css">
+	</head>
+	<body>
+		<div id="container">
+			<div id="header" class="justify">
+				<div class="logo box"> 
+					<a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
+					<span class="icon icon-home_btn_shouqi"></span>
+				</div>
+             	<div class="search box">
+                    <input type="text" placeholder="Ingredients/Recipes/Theme"  />
+                    <button value="" type="submit" class="icon-btn_search"></button>
+                    <div class="hotSearch">
+                    	<p>Hot</p>
+	                    <ul class="list">
+							<li>豆腐</li>
+							<li>豆腐</li>
+							<li>豆腐</li>
+							<li>豆腐</li>
+							<li>豆腐</li>
+							<li>放6个</li>
+	                    </ul>  
+                    </div>
+                </div>
+				<div id="login" class="justify box">
+					<div class="regionCode box">
+						<p>中国大陆</p>
+						<ul>
+							<li><a href="#">中国大陆</a></li>
+							<li><a href="#">香港</a></li>
+							<li><a href="#">台湾</a></li>
+							<li><a href="#">澳门</a></li>
+							<li><a href="#">其它</a></li>
+						</ul>
+					</div>
+					<div class="share box">
+						<a href="https://www.facebook.com/DayDayCookStudio/" target="_blank" class="icon-home_btn_fb"></a>
+						<a href="https://www.instagram.com/explore/tags/daydaycook/" target="_blank" class="icon-home_btn_ins"></a>
+						<a href="https://www.youtube.com/user/daydaycookkitchen" target="_blank" class="icon-gywm_icon_youtube"></a>
+						<a href="http://www.weibo.com/daydaycook" target="_blank" class="icon-gywm_icon_pinterest"></a>
+					</div>
+					<div class="members box">
+						<a href="会员默认页面.html"><img src="./img/nop.png" /></a>
+						<div class="info">	
+							<div class="null"></div>
+							<div class="left">
+								<b>Sara May</b>Hello,
+							</div>
+							<a href="#" class="quit">Logout</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="nav">
+				<ul class="clearfix">
+					<li><a href="菜谱&配方列表.html"><span class="icon-home_icon_recipes"></span>Recipes</a></li>
+					<li><a href="视频列表.html"><span class="icon-home_icon_title_vedio"></span>Video</a></li>
+					<li><a href="会员食谱.html"><span class="icon-home_icon_title_member"></span>Member</a></li>
+					<li><a href="三菜一汤.html"><span class="icon-home_icon_ssyt"></span>Meal Planner</a></li>
+					<li><a href="特色主题&特写分类&最新消息列表页.html"><span class="icon-home_icon_theme"></span>Featured Theme</a></li>
+					<li><a href="http://shop.daydaycook.com/"><span class="icon-home_icon_shopping"></span>Shop</a></li>
+				</ul>
+			</div>
+			<div id="details">
+				<div class="top">
+					<div id="video" class="justify center">
+						<div class="notVideo box"></div>
+						<div class="fixedVideo box">
+							<div class="controls hide justify">
+								<div class="scrollTop box">To Top</div>
+								<div class="drgg box">Tag</div>
+								<div class="closeVideo box">Close</div>
+							</div>
+							<div class="videoWidth">
+								<div class="videoWrap">
+									<video id="videoPlay" preload="none" class='video-js vjs-default-skin vjs-big-play-centered' poster=""><source src="http://testddc.oss-cn-hangzhou.aliyuncs.com/production/videos/20161103/18dd60ca-2420-4d2b-9bac-37240eb096d0" type='video/mp4' /></video>
+								</div>
+							</div>
+						</div>
+						<div class="funList justify">
+							<div class="box left">
+								<div class="favorite">
+									<span class="icon-spxq_btn_collect"></span>
+									<span class="txt">Favorite</span>
+								</div>
+								<div class="notFavorite">
+									<span class="icon-spxq_btn_collect_select"></span>
+									<span class="txt">Favorited</span>
+								</div>
+								<div class="share">
+									<span class="icon icon-spxq_btn_share"></span>
+									<span class="txt">Share</span>
+									<div class="toshare">
+										<div class="dsImg"></div>
+										<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享給QQ好友"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空間"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+										<script>window._bd_share_config={"common":{"bdSnsKey":"日日煮DayDayCook","bdText":"日日煮daydaycook－看菜谱视频烹饪,教你下厨煲汤煮菜做饭、蛋糕甜品烘培,享受美好的厨房生活,让味觉与视觉零距离,爱上自己的好厨艺","bdMini":"2","bdMiniList":false,"bdPic":"http://testddc.oss-cn-hangzhou.aliyuncs.com/production/images/20160831/fd51f34f-501c-4eaf-af1a-917049e53a96","bdStyle":"0","bdSize":"32"},"share":"日日煮DayDayCook","image":{"viewList":["sqq","qzone","tsina","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["sqq","qzone","tsina","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+									</div>
+								</div>
+								<div class="print">
+									<a href="打印.html">
+										<span class="icon-spxq_btn_print"></span>
+										<span class="txt">Print Out</span>
+									</a>
+								</div>
+							</div>
+							<div class="box right">
+								<div class="lookLen">
+									<span class="icon-login_btn_display"></span>
+									<span class="txt">1213</span>
+								</div>
+							</div>
+						</div>
+						<div class="detRight box">
+							<div class="tip">
+								<span class="icon iconZan"></span>
+								<p>Hot</p>
+							</div>
+							<div class="list justify">
+								<div class="img box">
+									<a href="#"><img src="./img/demo.jpg" /></a>
+								</div>
+								<div class="info box">
+									<p class="title">三文鱼肉丸扁意粉伴柠檬牛油果酱...</p>
+									<span class="icon-login_btn_display"></span>
+									<span class="num">157</span>
+								</div>
+							</div>
+							<div class="list justify">
+								<div class="img box">
+									<a href="#"><img src="./img/demo.jpg" /></a>
+								</div>
+								<div class="info box">
+									<p class="title">三文鱼肉丸扁意粉伴柠檬牛油果酱...</p>
+									<span class="icon-login_btn_display"></span>
+									<span class="num">157</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="detWrap center">
+					<div class="advert"><img src="./img/ad.jpg" /></div>
+					<div class="detailWood">
+						<div class="title">咖喱杂蔬乌冬面</div>
+						<div class="time">2015年09月06日</div>
+						<div class="look">	
+							<span class="icon-login_btn_display"></span><span class="txt">7538</span>
+						</div>
+						<div class="des">
+							懒和美味并没有天然的关系，用对方法才是关键！咖喱就是爱美食又不太愿意花费太多精力人的必杀技，是新手煮夫（煮妇）常备的快手酱料。这道咖喱杂蔬乌冬面，每一种食材中都糅杂着咖喱的芳香，还加入了椰酱来减低辣味和增强香味，配以香茅，更加增强咖喱的浓郁。容易消化的乌冬面和卡路里不高的蔬菜搭配，最适合作为晚餐食用。晚餐后与爱人手牵手散个步，消化了不少的热量又收获了浪漫的情调。
+						</div> 
+						<div class="timeLen">
+							<span class="icon iconTime"></span>
+							<span>Time 30分钟</span>
+						</div>
+					</div>
+					<div class="detailFood">
+						<div class="title"><span class="icon iconFood"></span><span>Recipe</span></div>
+						<div class="table">
+							<table>
+								<tbody>
+									<tr>
+										<td>水</td><td>200毫升</td>
+									</tr>
+									<tr>
+										<td>胡萝卜</td><td>1个</td>
+									</tr>
+									<tr>
+										<td>欧芹</td><td>5克</td>
+									</tr>
+									<tr>
+										<td>土豆</td><td>1个</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="detailStep">
+						<div class="title">
+							<span class="icon-STEP00"></span>
+							<span>Step</span>
+						</div>
+						<div class="stepList">
+							<div class="list justify">
+								<div class="img box"><img src="./img/demo.jpg" /></div>
+								<div class="info box">
+									<span class="icon-STEP01"></span>
+									<p>胡萝卜洗净切滚刀，欧芹切段，土豆洗净去皮切块，西兰花切小朵，泡在水中，干葱去皮切片，蒜切末，香茅用刀背拍一下后切末。</p>
+								</div>
+							</div>
+							<div class="list justify">
+								<div class="img box"><img src="./img/demo.jpg" /></div>
+								<div class="info box">
+									<span class="icon-STEP02"></span>
+									<p>烧一锅水，加入乌冬面，待水烧开，捞出乌冬面，过冷水，装碗。</p>
+								</div>
+							</div>
+							<div class="list justify">
+								<div class="img box"><img src="./img/demo.jpg" /></div>
+								<div class="info box">
+									<span class="icon-STEP03"></span>
+									<p>用之前煮面的水，烧开，加入胡萝卜，土豆，煮5分钟后，放入西兰花和欧芹煮半分钟，食材一起出锅，沥水备用。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="justify toggleCont">
+						<a class="prev box" href="#"><span class="icon-spxq_btn_pre"></span>香橙果酱鸡肉沙拉</a>
+						<a class="next box" href="#"><span class="icon-spxq_btn_next"></span>自制三式黄油</a>
+					</div>
+					<div id="comments" class="center">
+						<div class="tip">
+							<span class="icon-wode_btn_comments"></span>
+							<p>Message</p>
+						</div>
+						<div class="talk">
+							<label>Leave a comment...</label>
+							<div class="comtWrap">
+								<div class="summary"></div>
+								<div class="comtSucc" style="display:block;"> 
+									<span class="icon-spxq_icon_xiaolian"></span>
+									<p>Successed!</p>
+								</div>
+								<textarea name="talk" id="talkTxt" cols="30" rows="10" placeholder="Leave a comment..."></textarea>
+								<div class="addImg">
+									<form id="imgFormA">
+										<label><input type="file" name="filemImg" /></label>
+										<div class="closeForm" data-class="1">x</div>
+									</form>
+									<form id="imgFormB">
+										<label><input type="file" name="filemImg" accept="png,jpg,jpeg,gif"/></label>
+										<div class="closeForm" data-class="2">x</div>
+									</form>
+									<form id="imgFormC">
+										<label><input type="file" name="filemImg" accept="png,jpg,jpeg,gif"/></label>
+										<div class="closeForm" data-class="3">x</div>
+									</form>
+									<form id="imgFormD">
+									    <label><input type="file" name="filemImg" accept="png,jpg,jpeg,gif"/></label>
+									    <div class="closeForm" data-class="4">x</div>
+									</form>
+								</div>
+							</div>
+							<div class="justify comtUserInfo">
+								<div class="box">
+									<img class="userImg" src="./img/nop.png" />
+									<span class="userNameTxt">username</span>
+								</div>
+								<div class="box"><button id="recTalkBtn">Send</button></div>
+							</div>
+						</div>
+						<div class="comList">
+							<div class="img">
+								<img src="./img/nop.png" />
+							</div>
+							<div class="name">ddc</div>
+								<div class="info">
+									<p>Name</p>
+									<div class="time">2016/11/14</div>
+								</div>
+								<div class="callFun">
+									<div class="reply">
+										<span class="icon iconTalk"></span>Replay
+									</div>
+								</div>
+								<div class="textarea"> <!-- 默认隐藏 加一个class  hide -->
+									<textarea name="reply" cols="30" rows="10" placeholder="Leave your opinion..."></textarea><button id="replyCall" data-name="ddc" data-pid="19134">Replay</button>
+								</div>
+								<div class="callList">
+									<span class="toux">ddc@ddc:</span>
+									<p>D</p>
+									<div class="relTime">2016/11/14</div>
+									<p></p>
+									<div class="callFun">
+										<div class="reply">
+											<span class="icon iconTalk"></span>Replay</div>
+										</div>
+										<div class="textarea hide"> <!-- 默认隐藏 加一个class  hide -->
+											<textarea name="reply" cols="30" rows="10" placeholder="回复下你的看法"></textarea>
+										<button id="replyCall" data-name="ddc" data-pid="19135">Replay</button>
+									</div>
+								</div>
+							</div>
+						<div class="moreComt">More Message</div>
+						<div class="noMoreComt hide">No more message~</div>
+					</div>
+				</div>
+			</div>
+			<div id="footer" class="justify">
+			<div class="box">
+				<p>DayDayCook－New Recipes Every Day</p>
+				<div class="subscribe">
+					<input type="text" placeholder="Please enter your email" />
+					<input type="button" value="Subscribe" />
+				</div>
+			</div>
+			<div class="box txtRight">
+				<p>About Us</p>
+				<div class="share">
+					<a href="https://www.facebook.com/DayDayCookStudio/" target="_blank"><img src="./img/sh1.jpg" /></a>
+					<a href="https://www.instagram.com/explore/tags/daydaycook/" target="_blank"><img src="./img/sh2.jpg" /></a>
+					<a href="https://www.youtube.com/user/daydaycookkitchen" target="_blank"><img src="./img/sh3.jpg" /></a>
+					<a href="http://www.weibo.com/daydaycook" target="_blank"><img src="./img/sh4.jpg" /></a>
+				</div>
+			</div>
+			<div class="box">
+				<ul class="clearfix">
+					<li><a href="#">SC</a></li>
+					<li><a href="#">TC</a></li>
+					<li><a href="#">En</a></li>
+					<li><a href="#">|</a></li>
+				</ul>
+				<ul class="clearfix">
+					<li><a href="http://api.daydaycook.com.cn/" target="_blank">Mainland China Website</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="map.html">Sitemap</a></li>
+					<li><a href="HK隐私条款.html">Privacy Policy</a></li>
+					<li><a href="HK使用条款.html">Terms Of Use</a></li>
+				</ul>
+			</div>
+			<div class="box copyright"> DayDayCook © 2011 - 2016 日日煮. 版权所有</div>
+		</div>
+		</div>
+	</body>
+	<script src="./js/jquery-1.11.1.min.js" type="text/javascript"></script>
+	<script src="./js/jquery.qrcode.min.js" type="text/javascript"></script>
+	<script src="./js/calendar.js" type="text/javascript"></script>
+	<script src="./js/draggabilly.min.js" type="text/javascript"></script>
+	<script src="./js/video.js" type="text/javascript"></script>
+	<script src="./js/js.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		//视频插件
+	  	videojs(videoPlay, { "controls": true, "autoplay": false, "preload": "none"});
+	  	// 二维码插件
+	    $(".dsImg").qrcode("http://test.daydaycook.com.cn/daydaycook/website/details.html?id=936");
+
+	      /* 初始化拖拽功能以及范围 */
+	    var $draggable = $('.fixedVideo').draggabilly({
+	        containment: '#container'
+	    })
+
+	    $draggable.draggabilly('disable');
+
+	    /* 视频小窗功能和拖动 */
+	    var objHet = $(".fixedVideo").height();
+	    function fixVideo(obj){
+	        var objTop = $(obj).parent().offset().top;
+	        var objLe = objTop + objHet;
+	        var winTop = $(window).scrollTop();
+	        if(winTop > objLe){
+	            $(obj).addClass('fixed');
+	            $(obj).parent().css("height",objHet);
+	            $draggable.draggabilly('enable');
+
+	        }else{
+	            $(obj).removeClass('fixed');
+	            $(obj).parent().css("height","auto");
+	            $draggable.draggabilly('disable');
+	        }
+	    }     
+	    /* 视频小窗功能 */
+	    var windowWith = $(window).width();
+	    $(window).bind("scroll",function(){
+	        windowWith = $(window).width();
+	        if($(".fixedVideo").length>0 && windowWith > 1000 && !(navigator.userAgent.match(/(iPhone|iPod|Android|ios|ipad)/i))){
+	            fixVideo(".fixedVideo");
+	        }
+	    })
+
+	    // 关闭视频小窗
+	    $(".closeVideo").click(function() {
+	        $("#video").css("height","auto");
+	        $(".fixedVideo").removeClass('fixed');
+	        document.getElementById('videoPlay_html5_api').pause();
+	        $(window).unbind("scroll");
+	    });
+
+	</script>
+</html>

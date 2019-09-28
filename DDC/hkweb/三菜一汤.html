@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="keywords" content=""/>
+		<meta name="description" content=""/>
+		<title>三菜一汤</title>
+		<link rel="stylesheet" type="text/css" href="./css/main.css">
+	</head>
+	<body>
+		<div id="container">
+			<div id="header" class="justify">
+				<div class="logo box"> 
+					<a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
+					<span class="icon icon-home_btn_shouqi"></span>
+				</div>
+             	<div class="search box">
+                    <input type="text" placeholder="食材/菜譜/主題"  />
+                    <button value="" type="submit" class="icon-btn_search"></button>
+                    <div class="hotSearch">
+                    	<p>热门搜索</p>
+	                    <ul class="list">
+							<li>豆腐</li>
+							<li>豆腐</li>
+							<li>豆腐</li>
+							<li>豆腐</li>
+							<li>豆腐</li>
+							<li>放6个</li>
+	                    </ul>  
+                    </div>
+                </div>
+				<div id="login" class="justify box">
+					<div class="regionCode box">
+						<p>中国大陆</p>
+						<ul>
+							<li><a href="#">中国大陆</a></li>
+							<li><a href="#">香港</a></li>
+							<li><a href="#">台湾</a></li>
+							<li><a href="#">澳门</a></li>
+							<li><a href="#">其它</a></li>
+						</ul>
+					</div>
+					<div class="share box">
+						<a href="https://www.facebook.com/DayDayCookStudio/" target="_blank" class="icon-home_btn_fb"></a>
+						<a href="https://www.instagram.com/explore/tags/daydaycook/" target="_blank" class="icon-home_btn_ins"></a>
+						<a href="https://www.youtube.com/user/daydaycookkitchen" target="_blank" class="icon-gywm_icon_youtube"></a>
+						<a href="http://www.weibo.com/daydaycook" target="_blank" class="icon-gywm_icon_pinterest"></a>
+					</div>
+					<div class="members box">
+						<a href="会员默认页面.html"><img src="./img/nop.png" /></a>
+						<div class="info">	
+							<div class="null"></div>
+							<div class="left">
+								<b>Sara May</b>您好,
+							</div>
+							<a href="#" class="quit">退出</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="nav">
+				<ul class="clearfix">
+					<li><a href="菜谱&配方列表.html"><span class="icon-home_icon_recipes"></span>食譜</a></li>
+					<li><a href="视频列表.html"><span class="icon-home_icon_title_vedio"></span>視頻</a></li>
+					<li><a href="会员食谱.html"><span class="icon-home_icon_title_member"></span>會員</a></li>
+					<li><a href="三菜一汤.html"><span class="icon-home_icon_ssyt"></span>三餸一湯</a></li>
+					<li><a href="特色主题&特写分类&最新消息列表页.html"><span class="icon-home_icon_theme"></span>特式主題</a></li>
+					<li><a href="http://shop.daydaycook.com/"><span class="icon-home_icon_shopping"></span>商店</a></li>
+				</ul>
+			</div>
+			<div class="center">
+				<div id="result" class="box noWrap">
+					<div class="filterTop">
+						<div class="info justify">
+							<div class="title box">
+								<ul>
+									<li class="active">餐单设计</li>
+								</ul>
+							</div>
+							<ul class="condList box">
+								<input type="text" id="dataPick" value="" readonly="readonly"/>
+								<span class="icon-ssyt_icon_rili"></span>
+							</ul>
+							<div id="rootCalendar"></div> 
+						</div>
+						<div class="advancedList type">
+							<div class="searchType">
+								<label>
+									<span>菜式類別</span>
+									<select>
+										<option>湘菜</option>
+										<option>湘菜</option>
+										<option>湘菜</option>
+										<option>湘菜</option>
+										<option>湘菜</option>
+									</select>
+								</label>
+								<label>
+									<span>菜式數目</span>
+									<select>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>more</option>
+									</select>
+								</label>
+								<label>
+								<span>湯數目</span>
+									<select>
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>more</option>
+									</select>
+								</label>
+							</div>
+							<div class="avoidType">
+								<span>忌口類別</span>
+								<input type="checkbox" name="no" /> 堅果
+								<input type="checkbox" name="no" /> 堅果
+								<input type="checkbox" name="no" /> 堅果
+								<input type="checkbox" name="no" /> 堅果
+								<input type="checkbox" name="no" /> 堅果
+							</div>
+							<button class="submit" type="submit">提交</button>
+						</div>
+					</div>
+					<div class="recipe clearfix">
+						<div class="left">
+							<div class="justify soupLarge one">
+								<div class="box">
+									<span class="img">
+										<img src="./img/demo.jpg" />
+										<div class="funtName">
+											<span class="title">冰糖雪耳炖木瓜</span>
+											<span class="subtitle">素食食譜</span>
+										</div>
+										<div class="funt">
+											<span class="icon-dybzt_icon_time"></span>
+											<span class="number">1小时</span>
+											<span class="icon-login_btn_display"></span>
+											<span class="number">1467</span>
+											<span class="icon-login_btn_display"></span>
+											<span class="number">1467</span>
+										</div>
+									</span>
+									<a href="#">
+										<div class="mask">
+											<div class="material">
+												<span class="title">冰糖雪耳炖木瓜</span>
+												<div class="funt">
+													<span class="icon-dybzt_icon_time"></span>
+													<span class="number">1小时</span>
+													<span class="icon-login_btn_display"></span>
+													<span class="number">1467</span>
+													<span class="icon-login_btn_display"></span>
+													<span class="number">1467</span>
+												</div>
+												<div class="method">
+													<p class="methodTitle">材料:</p>
+													<p>豬肋骨 200克  、娃娃菜 100克  、薑 20克  、蔥 20克  、薯仔 400克  、洋蔥 1個  、蒜頭 5瓣  、韓國白酒 100毫升  、水 1.5公升  、韓國辣椒粉 1湯匙  、韓國麵豉醬 1湯匙韓國辣椒醬 1茶匙  、韓國芝麻油 1茶匙  、鹽及黑胡椒 適量</p>
+													<p class="methodTitle">做法</p>
+													<p> 1. 薯仔去皮後切件。<br />
+														2. 洋蔥切件。<br />
+														3. 薑切片；蔥切段；娃娃菜切塊。<br />
+														4. 將一鍋水煮滾，加入豬肋骨汆水20分鐘，瀝乾備用。<br />
+														5. 準備一個大鍋，加入水、薑、蔥、豬肋骨、洋蔥、蒜頭及韓國白酒。<br />
+														6. 煮滾後轉中火，蓋上鍋蓋煮2小時
+													</p>
+												</div>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="typeName">
+								<span>三餸一湯</span>
+							</div>
+							<div class="resultList justify four soup">
+								<div class="box">
+									<a href="#">
+										<span class="img">
+											<img src="./img/demo.jpg" />
+											<div class="funt">
+												<span class="icon-dybzt_icon_time"></span>
+												<span class="number">1小时</span>
+												<span class="icon-login_btn_display"></span>
+												<span class="number">1467</span>
+											</div>
+										</span>
+										<span class="subtitle">素食食譜</span>
+										<span class="title">冰糖雪耳炖木瓜</span>
+										<span class="subtitle">by DayDayCook</span>
+									</a>
+								</div>
+								<div class="box">
+									<a href="#">
+										<span class="img">
+											<img src="./img/demo.jpg" />
+											<div class="funt">
+												<span class="icon-dybzt_icon_time"></span>
+												<span class="number">1小时</span>
+												<span class="icon-login_btn_display"></span>
+												<span class="number">1467</span>
+											</div>
+										</span>
+										<span class="subtitle">素食食譜</span>
+										<span class="title">冰糖雪耳炖木瓜</span>
+										<span class="subtitle">by DayDayCook</span>
+									</a>
+								</div>
+								<div class="box">
+									<a href="#">
+										<span class="img">
+											<img src="./img/demo.jpg" />
+											<div class="funt">
+												<span class="icon-dybzt_icon_time"></span>
+												<span class="number">1小时</span>
+												<span class="icon-login_btn_display"></span>
+												<span class="number">1467</span>
+											</div>
+										</span>
+										<span class="subtitle">素食食譜</span>
+										<span class="title">冰糖雪耳炖木瓜</span>
+										<span class="subtitle">by DayDayCook</span>
+									</a>
+								</div>
+								<div class="box">
+									<a href="#">
+										<span class="img">
+											<img src="./img/demo.jpg" />
+											<div class="funt">
+												<span class="icon-dybzt_icon_time"></span>
+												<span class="number">1小时</span>
+												<span class="icon-login_btn_display"></span>
+												<span class="number">1467</span>
+											</div>
+										</span>
+										<span class="subtitle">素食食譜</span>
+										<span class="title">冰糖雪耳炖木瓜</span>
+										<span class="subtitle">by DayDayCook</span>
+									</a>
+								</div>
+								<!-- 站位用的div 一定要放 -->
+								<div class="line"></div>
+								<div class="line"></div>
+								<div class="line"></div>
+							</div>
+						</div>
+						<div class="right">
+							<img src="./img/ad.jpg">
+							<img src="./img/ad.jpg">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer" class="justify">
+			<div class="box">
+				<p>日日煮－每日最新食譜推介</p>
+				<div class="subscribe">
+					<input type="text" placeholder="請輸入你的電郵" />
+					<input type="button" value="訂閱" />
+				</div>
+			</div>
+			<div class="box txtRight">
+				<p>了解更多有关日日煮的信息</p>
+				<div class="share">
+					<a href="https://www.facebook.com/DayDayCookStudio/" target="_blank"><img src="./img/sh1.jpg" /></a>
+					<a href="https://www.instagram.com/explore/tags/daydaycook/" target="_blank"><img src="./img/sh2.jpg" /></a>
+					<a href="https://www.youtube.com/user/daydaycookkitchen" target="_blank"><img src="./img/sh3.jpg" /></a>
+					<a href="http://www.weibo.com/daydaycook" target="_blank"><img src="./img/sh4.jpg" /></a>
+				</div>
+			</div>
+			<div class="box">
+				<ul class="clearfix">
+					<li><a href="#">简</a></li>
+					<li><a href="#">繁</a></li>
+					<li><a href="#">En</a></li>
+					<li><a href="#">|</a></li>
+				</ul>
+				<ul class="clearfix">
+					<li><a href="http://api.daydaycook.com.cn/" target="_blank">内陆官网</a></li>
+					<li><a href="about.html">关于我们</a></li>
+					<li><a href="map.html">网站地图</a></li>
+					<li><a href="HK隐私条款.html">隐私条款</a></li>
+					<li><a href="HK使用条款.html">使用条款</a></li>
+				</ul>
+			</div>
+			<div class="box copyright"> DayDayCook © 2011 - 2016 日日煮. 版权所有</div>
+		</div>
+	</body>
+	<script src="./js/jquery-1.11.1.min.js" type="text/javascript"></script>
+	<script src="./js/jquery.qrcode.min.js" type="text/javascript"></script>
+	<script src="./js/calendar.js" type="text/javascript"></script>
+	<script src="./js/draggabilly.min.js" type="text/javascript"></script>
+	<script src="./js/video.js" type="text/javascript"></script>
+	<script src="./js/glDatePicker.cn.js" type="text/javascript"></script>
+	<script src="./js/js.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		var date = new Date();
+		var y = date.getFullYear();
+		var m = date.getMonth() + 1;
+		var t = date.getDate();
+		var dataStr = y + "/" + m + "/" + t;
+		$("#dataPick").val(dataStr);
+
+		$('#dataPick').glDatePicker({
+            cssName: 'darkneon',
+            showAlways:false,
+            todayDate: new Date(),
+            onClick: function(target, cell, date, data) {
+		        target.val(date.getFullYear() + '/' + date.getMonth() + '/' + date.getDate());
+		        var dateNeed = date.getFullYear() + '/' + date.getMonth() + '/' + date.getDate();
+
+		        console.log(dateNeed);
+		        alert(dateNeed);
+		        
+		    }
+        });
+
+	</script>
+</html>

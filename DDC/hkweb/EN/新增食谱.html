@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="keywords" content=""/>
+		<meta name="description" content=""/>
+		<title>新增食譜</title>
+		<link rel="stylesheet" type="text/css" href="./css/main.css">
+	</head>
+	<body>
+		<div id="container">
+			<div id="header" class="justify">
+				<div class="logo box"> 
+					<a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
+					<span class="icon iconMenu"></span>
+				</div>
+				<div class="search box">
+					<label>
+						<input type="text" placeholder="Ingredients/Recipes/Theme"  />
+						<button type="button" class="icon iconSearch"></button>
+					</label>
+				</div>
+				<div id="login" class="justify box">
+					<div class="regionCode box">
+						<p>中国大陆</p>
+						<ul>
+							<li><a href="#">中国大陆</a></li>
+							<li><a href="#">香港</a></li>
+							<li><a href="#">台湾</a></li>
+							<li><a href="#">澳门</a></li>
+							<li><a href="#">其它</a></li>
+						</ul>
+					</div>
+					<div class="share box">
+						<a href="#" class="icon iconFacebook"></a>
+						<a href="#" class="icon iconFacebook"></a>
+						<a href="#" class="icon iconYoutube"></a>
+						<a href="#" class="icon iconWeibo"></a>
+					</div>
+					<div class="members box">
+						<a href="会员默认页面.html"><img src="./img/nop.png" /></a>
+						<div class="info">	
+							<div class="null"></div>
+							<div class="left">
+								<b>Sara May</b>Hello,
+							</div>
+							<a href="#" class="quit">Logout</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="nav" class="center">
+				<ul class="clearfix">
+					<li><a href="菜谱&配方列表.html"><span class="icon-home_icon_recipes"></span>Recipes</a></li>
+					<li><a href="视频列表.html"><span class="icon-home_icon_title_vedio"></span>Video</a></li>
+					<li><a href="会员食谱.html"><span class="icon-home_icon_title_member"></span>Member</a></li>
+					<li><a href="三菜一汤.html"><span class="icon-home_icon_ssyt"></span>Meal Planner</a></li>
+					<li><a href="特色主题&特写分类&最新消息列表页.html"><span class="icon-home_icon_theme"></span>Featured Theme</a></li>
+					<li><a href="http://shop.daydaycook.com/"><span class="icon-home_icon_shopping"></span>Shop</a></li>
+				</ul>
+			</div>
+			<div id="member" class="center clearfix">
+				<div class="left">
+					<ul>
+						<li><img src="./img/nop.png" /></li>
+						<li class="name">Sara May</li>
+						<li>Sara_May@163.com</li>
+						<li>2016-09-01 joined</li>
+					</ul>
+					<div class="tool">
+						<a href="会员修改资料.html">
+							<span class="icon-me_btn_xiugaiziliao"></span>
+							<p>Update Personal Info</p>
+						</a>
+						<a href="会员我的食谱.html">
+							<span class="icon-home_icon_recipes-copy"></span>
+							<p>My Recipes</p>
+						</a>
+						<a href="会员我的收藏.html">
+							<span class="icon-wode_btn_collection"></span>
+							<p>My Favorites</p>
+						</a>
+						<a href="会员我的评论.html">
+							<span class="icon-wode_btn_comments"></span>
+							<p>My Comments</p>
+						</a>
+					</div>
+				</div>
+				<div id="newRecipe" class="right">
+					<div class="titleYl">
+						<span class="icon iconSys"></span>
+						<b>New Recipe</b>
+					</div>
+					<form action="#" >
+						<label id="fileImg">
+							<!-- 图片编辑用的 -->
+							<img src="./img/nocol.png" />
+							<input type="file" name="" />
+						</label>
+						<ul class="addRecipe">
+							<li class="imgRight">
+								<label>Recipe Name</label>
+								<input type="text" placeholder="Please enter your Recipe name/>
+							</li>
+							<li class="imgRight">
+								<label>标签</label>
+								<input type="text" placeholder="标签间请用“空格”或“逗号”隔开，最多可添加10个标签" />
+								<div class="toggle">
+									<b>常用标签：</b>
+									<span>牛肉</span>
+									<span>牛肉</span>
+									<span>牛肉</span>
+									<span>牛肉</span>
+									<span>牛肉</span>
+									<span>牛肉</span>
+									<span>牛肉</span>
+									<span>牛肉</span>
+									<span>牛肉</span>
+									<span>牛肉</span>
+									<span>牛肉</span>
+									<span>牛肉</span>
+									<span>牛肉</span>
+									<span>牛肉</span>
+									<span>牛肉</span>
+									<span>牛肉</span>
+									<span>牛肉</span>
+								</div>
+							</li>
+							<li class="imgRight">
+								<label>難度</label>
+								<select>
+									<option value="0">容易</option>
+									<option value="1">難</option>
+								</select>
+								<label>技術</label>
+								<select>
+									<option value="0">蒸</option>
+									<option value="1">煮</option>
+								</select>
+							</li>
+							<li class="imgRight min">
+								<label>味道</label>
+								<select>
+									<option value="0">酸</option>
+									<option value="1">甜</option>
+								</select>
+								<label class="marginLeft">需求時間</label>
+								<select>
+									<option value="0">请选择</option>
+									<option value="1">1</option>
+								</select>
+								<label class="txtLeft">小時</label>
+								<select>
+									<option value="0">请选择</option>
+									<option value="1">1</option>
+								</select>
+								<label class="txtLeft">分鐘</label>
+							</li>
+							<li> 
+								<label>Decripe</label>
+								<textarea placeholder="点击添加食譜描述..."></textarea>
+							</li>
+							<li> 
+								<label></label>
+								<textarea placeholder="点击添加食譜材料..."></textarea>
+							</li>
+							<li class="addStep"> 
+								<label>做法</label>
+								<div class="step">
+									<span class="icon icon-STEP01"></span>
+									<textarea id="stepText" placeholder="点击添加食譜步骤..."></textarea>
+									<label id="fileStep">
+										<!--  图片是编辑用的 -->
+										<img src="./img/nop.png" />
+										<input type="file" name="" />
+									</label>
+								</div>
+							</li>
+							<li >
+								<label id="btnDel" class="delStep combtn"><span></span>删除步骤</label>
+								<label id="btnAdd" class="addStep combtn"><span></span>添加步骤</label>
+							</li>
+							<li class="txtRight"><button>取消</button><button>发布</button></li>
+						</ul>
+					</form>
+				</div>
+			</div>
+			<div id="footer" class="justify">
+			<div class="box">
+				<p>DayDayCook－New Recipes Every Day</p>
+				<div class="subscribe">
+					<input type="text" placeholder="Please enter your email" />
+					<input type="button" value="Subscribe" />
+				</div>
+			</div>
+			<div class="box txtRight">
+				<p>About Us</p>
+				<div class="share">
+					<a href="https://www.facebook.com/DayDayCookStudio/" target="_blank"><img src="./img/sh1.jpg" /></a>
+					<a href="https://www.instagram.com/explore/tags/daydaycook/" target="_blank"><img src="./img/sh2.jpg" /></a>
+					<a href="https://www.youtube.com/user/daydaycookkitchen" target="_blank"><img src="./img/sh3.jpg" /></a>
+					<a href="http://www.weibo.com/daydaycook" target="_blank"><img src="./img/sh4.jpg" /></a>
+				</div>
+			</div>
+			<div class="box">
+				<ul class="clearfix">
+					<li><a href="#">SC</a></li>
+					<li><a href="#">TC</a></li>
+					<li><a href="#">En</a></li>
+					<li><a href="#">|</a></li>
+				</ul>
+				<ul class="clearfix">
+					<li><a href="http://api.daydaycook.com.cn/" target="_blank">Mainland China Website</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="map.html">Sitemap</a></li>
+					<li><a href="HK隐私条款.html">Privacy Policy</a></li>
+					<li><a href="HK使用条款.html">Terms Of Use</a></li>
+				</ul>
+			</div>
+			<div class="box copyright"> DayDayCook © 2011 - 2016 日日煮. 版权所有</div>
+		</div>
+		</div>
+		<script src="./js/jquery-1.11.1.min.js" type="text/javascript"></script>
+		<script src="./js/jquery.qrcode.min.js" type="text/javascript"></script>
+		<script src="./js/calendar.js" type="text/javascript"></script>
+		<script src="./js/draggabilly.min.js" type="text/javascript"></script>
+		<script src="./js/video.js" type="text/javascript"></script>
+		<script src="./js/js.js" type="text/javascript"></script>
+		<script>
+			var i = 1;
+
+			$('#btnAdd').click(function(){
+				var str;
+				i++;
+				str = "<li class='addStep'> <div class='step'> <span class='icon icon-STEP0" + i + "'></span> <textarea id='stepText' placeholder='点击添加食譜步骤...'></textarea> <label id='fileStep'> <img src=' /><input type='file' name='' /></label></div></li>";
+				$('#btnDel').before(str);
+			});
+
+			$(document).on('click','#btnDel',function(){
+				if($('.step').length>1){
+					$('.step').last().remove();
+				}
+			});
+
+			$('.toggle').hide();
+			$('.imgRight:nth-child(2) input').click(function(){
+				$('.toggle').slideToggle();
+			})
+			
+		</script>
+	</body>
+</html>

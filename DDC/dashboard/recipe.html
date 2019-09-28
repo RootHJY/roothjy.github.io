@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<title>Dashboard - DayDayCook日日煮</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css?v=201706022">
+		<link rel="stylesheet" type="text/css" href="css/jedate.css">
+	</head>
+	<body>
+		<div id="container" class="big">
+			<div id="tableRecipeDay">
+				<div id="aloneTop" class="justify">
+					<div class="title box">{{ recipeName }}</div>
+					<div class="back box"><a href="./index.html"><< 返回</a></div>
+				</div>
+				<div class="mainWrap">
+					<div class="tool justify">
+						<div class="title box">累积菜谱日报</div>
+						<div class="box">
+							<div class="timeStr">
+								<span>日期</span>
+								<input id="inpstart_recipe" type="text" value="" readonly/>
+								—
+								<input id="inpend_recipe" type="text" value="" readonly/>
+							</div>
+						</div>
+						<div class="box">
+							<a href="javascript:execlExported()" class="searchBtn">导出</a>
+						</div>
+					</div>
+					<div class="moTomo">
+						<ul class="recipeInfo">
+							<li>菜谱ID:<span>{{ recipeId }}</span></li>
+							<li>菜谱名称:<span> {{ recipeName }}</span></li>
+							<li>作者:<span> {{ authorName }}</span></li>
+							<li>发布日期:<span> {{ releaseDate }}</span></li>
+						</ul>
+						<div class="mobileOver">
+							<table>
+								<thead>
+									<tr>
+										<td>序号</td>
+										<td>日期</td>
+										<td>点击量</td>
+										<td>分享量</td>
+										<td>收藏量</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr v-for="(item,index) in list">
+										<td> {{ index + 1 }}</td>
+										<td> {{ item.statisticsTime }}</td>
+										<td> {{ item.clickAccount }}</td>
+										<td> {{ item.shareAccount }}</td>
+										<td> {{ item.collectionAccount }}</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="./lib/md5.js"></script>
+	<script type="text/javascript" src="./lib/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="./lib/aes.js"></script>
+    <script type="text/javascript" src="./lib/mode-ecb.js"></script>
+    <script type="text/javascript" src="./lib/token.min.js"></script>
+    <script type="text/javascript" src="./lib/echarts.common.min.js"></script>
+	<script type="text/javascript" src="./lib/jquery.jedate.min.js"></script>
+	<script type="text/javascript" src="./lib/vue.min.js"></script>
+	<script type="text/javascript" src="./lib/recipe.js"></script>
+</html>
